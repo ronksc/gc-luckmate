@@ -1,0 +1,156 @@
+//===============================================================================
+//===============================================================================
+// Base
+//===============================================================================
+//===============================================================================
+
+.banner { }
+
+.navbar-header{
+	background:#fff;
+}
+
+.navbar-default{
+	border-bottom: 0;
+	background-color:transparent;
+	
+	.navbar-toggle{
+		padding: 0;
+		margin-top:22px;
+		margin-right:20px;
+		border: none;
+		
+		&:hover, &:focus{
+			background:#fff;
+		}
+		
+		.icon-bar{
+			background:#3754A1;
+			width:32px;
+			height:3px;
+		}
+		
+		.icon-bar + .icon-bar{
+			margin-top:7px;
+		}
+	}
+	
+	.navbar-collapse{
+		border:0;
+		max-height:none;
+	}
+	
+	.nav-container{
+		background-color:#3754A1;	
+	}
+	
+	.navbar-nav{
+		text-align:center;
+		& > li{
+			& > a{
+				color:#fff;
+				text-transform:uppercase;
+				font-weight:bold;
+				letter-spacing:2px;
+				font-size:15px;
+				padding-top: 20px;
+			    padding-bottom: 20px;
+			}
+		}
+		
+		& > .active > a{
+			background-color:transparent;
+			color:#27ABE2;
+		}
+	}
+}
+
+.navbar-brand{
+	width:230px;
+	height:auto;
+	padding:10px 15px;
+}
+
+.navbar{
+	margin-bottom:0;
+}
+
+//===============================================================================
+//===============================================================================
+// tablet
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-sm-min) {
+
+}
+
+//===============================================================================
+//===============================================================================
+// Desktop
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-md-min) {
+	.navbar-brand{
+		max-width:284px;
+		height:auto;
+	}
+	
+	.navbar-nav{
+		float: right;
+		margin-top: 15px;
+	}
+	
+	/*.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+		color:#2C499F!important;
+		background-color:#fff!important;
+	}*/
+	
+	.navbar-default{
+		background:#fff;
+	
+		.nav-container{
+			background:#fff;
+		}
+		
+		.navbar-nav{
+			& > li{
+				& > a{
+					font-size: 12px;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+					color: #171717!important;
+					font-weight: bold;
+					padding:10px 25px;
+				}
+			}
+		
+			a{
+				&:hover, &:focus{
+					color:#2C499F!important;
+					background-color:#fff!important;
+				}
+			}
+		
+			& > .active{
+				& > a{
+					color:#2C499F!important;
+					background-color:#fff!important;
+					
+					&:hover,&:focus{
+						color:#2C499F!important;
+						background-color:#fff!important;
+					}
+				}
+			}
+		}
+	}
+}
+
+//===============================================================================
+//===============================================================================
+// Wide desktop
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-lg-min) {
+
+}

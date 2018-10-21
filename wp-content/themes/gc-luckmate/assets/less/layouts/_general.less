@@ -1,0 +1,271 @@
+// Content wrapper
+.wrap { }
+
+// Main content area
+.main {
+  .make-sm-column(@main-sm-columns);
+  .sidebar-primary & {
+    .make-sm-column(@main-sm-columns - @sidebar-sm-columns);
+  }
+}
+
+.quote-text-wrapper{
+	position:relative;
+	padding-top:50px;
+	//padding-bottom:50px;
+	//margin-bottom:55px;
+	text-align:center;
+	background:url(../img/drop_shadow.png) repeat-x;
+	
+	
+	.quote-text-content{
+		font-size:25px;
+		color:#00ADEE;
+		padding-bottom:90px;
+		background:url(../img/drop_shadow.png) repeat-x bottom;
+	}
+}
+
+.quote-img-text-wrapper{
+	position:relative;
+	//padding-top:50px;
+	//text-align:center;
+	//background:url(../img/drop_shadow.png) repeat-x;
+	
+	&:last-of-type{
+		.quote-img-text-content{
+			background:none!important;
+		}
+	}
+	
+	.quote-img-text-content{
+		padding-bottom:90px;
+		background:url(../img/drop_shadow.png) repeat-x bottom;
+	}
+}
+
+.page-hero{
+	margin-bottom:50px;
+}
+
+.normal-content{
+	font-size:18px;
+	margin-bottom:30px;
+	
+	h2, h3{
+		display:inline-block;
+		font-size:23px;
+		color:#3853a4;
+	}
+	
+	h2{
+		font-weight:bold;
+		margin:30px 0;
+		letter-spacing:2px;
+		text-transform:uppercase;
+	}
+	
+	h3{
+		&.intro-text{
+			margin-bottom:40px;
+			line-height:42px;
+		}
+	}
+	
+	ul{
+		padding-left:20px;
+		li{
+			//padding-left:0;
+			line-height:42px;
+		}
+	}
+	
+	.quote-text-wrapper{
+		margin-top:30px;
+	}
+	
+	.logo-item{
+		margin-bottom:30px;
+		&:last-child{
+			margin-bottom:0;
+		}
+	}
+	
+	.text-img{
+		margin-top:30px;
+		
+		h2{
+			//&:first-child{
+				margin-top:0!important;
+			//}
+		}
+		
+		&.right-img{
+			
+		
+			img{
+				float: right;
+				max-width: 40%;
+				margin-left: 5%;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+.grey-background-content{
+	position:relative;
+
+	&:before{
+		content:"";
+		display:block;
+		position:absolute;
+		left:0;
+		width:100%;
+		height:75%;
+		background:#E6E7E8;
+	}
+
+	&.bottom-image{
+		&:before{
+			top:0;
+		}
+	
+		.img-container{
+			margin-top:30px;
+		}
+	}
+	
+	&.top-image{
+		&:before{
+			bottom:0;
+		}
+	
+		.img-container{
+			margin-bottom:30px;
+		}
+	}
+	
+	&.table{
+		background:#E6E7E8;
+	
+		&:before{
+			display:none;
+		}
+	}
+	
+	.normal-content{
+		position:relative;
+		z-index:800;
+		
+		.table-wrapper{
+			//display:table;
+			//width:100%;
+			.table-container{
+				//display:table-row;
+				.table-cell{
+					//display:table-cell;
+					h3{
+						margin-top:30px;
+						padding-right:20px;
+						font-size:18px;
+						font-weight:bold;
+						text-transform:uppercase;
+						letter-spacing:2px;
+					}
+					
+					ul{
+						padding:0;
+						margin:0;
+						li{
+							list-style:none;
+							padding-left:0;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+//===============================================================================
+//===============================================================================
+// tablet
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-sm-min) {
+
+}
+
+//===============================================================================
+//===============================================================================
+// Desktop
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-md-min) {
+	.grey-background-content{
+		/*position:relative;
+	
+		&:before{
+			content:"";
+			display:block;
+			position:absolute;
+			left:0;
+			width:100%;
+			height:75%;
+			background:#E6E7E8;
+		}
+	
+		&.bottom-image{
+			&:before{
+				top:0;
+			}
+		
+			.img-container{
+				margin-top:30px;
+			}
+		}
+		
+		&.top-image{
+			&:before{
+				bottom:0;
+			}
+		
+			.img-container{
+				margin-bottom:30px;
+			}
+		}
+		
+		&.table{
+			background:#E6E7E8;
+		
+			&:before{
+				display:none;
+			}
+		}*/
+		
+		.normal-content{			
+			.table-wrapper{
+				display:table;
+				width:100%;
+				.table-container{
+					display:table-row;
+					.table-cell{
+						display:table-cell;
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+//===============================================================================
+//===============================================================================
+// Wide desktop
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-lg-min) {
+
+}
