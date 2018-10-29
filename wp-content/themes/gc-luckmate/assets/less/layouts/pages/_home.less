@@ -77,7 +77,7 @@
 				list-style:none;
 				display:inline-block;
 				&.prev{
-					margin-left:20px;
+					margin-left:10px;
 					float:left;
 					a{
 						background-image:url(../img/common/arrow_left.png);
@@ -85,7 +85,7 @@
 				}
 				
 				&.next{
-					margin-right:20px;
+					margin-right:10px;
 					float:right;
 					a{
 						background-image:url(../img/common/arrow_right.png);
@@ -154,6 +154,18 @@
 			.hero-slider{
 				.slick-dots{
 					display:none!important;
+				}
+			}
+			
+			ul.slider-control{
+				li{
+					&.prev{
+						margin-left:20px;
+					}
+					
+					&.next{
+						margin-right:20px;
+					}
 				}
 			}
 		}
