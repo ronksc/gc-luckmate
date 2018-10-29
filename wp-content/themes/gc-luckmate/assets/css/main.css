@@ -6633,6 +6633,13 @@ body {
 p {
   line-height: 42px;
 }
+a {
+  color: #221F1F;
+  text-decoration: underline;
+}
+a:hover {
+  color: #221F1F;
+}
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
@@ -6911,6 +6918,9 @@ figure.alignnone {
 .navbar-default .nav-container {
   background-color: #3754A1;
 }
+.navbar-default a {
+  text-decoration: none!important;
+}
 .navbar-default .navbar-nav.mobile-menu {
   text-align: center;
 }
@@ -7051,6 +7061,9 @@ footer h5 {
   margin-top: 0;
 }
 footer a {
+  color: #fff;
+}
+footer a:hover {
   color: #fff;
 }
 footer .menu li {

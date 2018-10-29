@@ -1,7 +1,7 @@
 <footer class="content-info" role="contentinfo">
   <div class="container">
     <?php //dynamic_sidebar('sidebar-footer'); ?>
-	<div class="col-md-8 col-md-push-2">
+	<div class="col-md-10 col-lg-8 col-md-push-1 col-lg-push-2">
 		<div class="row">
 			<div class="col-md-4">
 				<h5>CONTACT</h5>
