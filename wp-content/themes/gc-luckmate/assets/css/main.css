@@ -7102,6 +7102,12 @@ footer .copyright-container span:last-child:after {
   position: relative;
   margin-bottom: 50px;
 }
+.page-template-template-home .hero-container .hero-slider .slick-dots {
+  bottom: 10px;
+}
+.page-template-template-home .hero-container .hero-slider .slick-dots li button:before {
+  color: #fff;
+}
 .page-template-template-home .hero-container .hero-slider .hero-slide-item {
   position: relative;
   color: #fff;
@@ -7197,6 +7203,11 @@ footer .copyright-container span:last-child:after {
 .page-template-template-home .image-text-item .text-container a {
   color: #6277B7;
   text-decoration: underline;
+}
+@media (min-width: 992px) {
+  .page-template-template-home .hero-container .hero-slider .slick-dots {
+    display: none!important;
+  }
 }
 /* Slider */
 .slick-slider {

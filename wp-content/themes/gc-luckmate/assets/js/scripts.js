@@ -5368,12 +5368,14 @@ var Roots = {
     init: function() {
 	  function initSlick(){
 		$('.hero-slider').slick({
+			dots: true,
 			autoplay: true,
 			autoplaySpeed: 5000,
 			slidesToScroll: 1,
 			slidesToShow: 1,
 			prevArrow: $('.prev'),
-			nextArrow: $('.next')
+			nextArrow: $('.next'),
+			
 		});  
 	  }
 		

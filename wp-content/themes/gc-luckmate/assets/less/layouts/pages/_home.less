@@ -10,7 +10,15 @@
 		margin-bottom:50px;
 
 		.hero-slider{
-			
+			.slick-dots{
+				bottom:10px;
+				
+				li{
+					button:before{
+						color:#fff;
+					}
+				}
+			}
 			
 			.hero-slide-item{
 				position:relative;
@@ -142,7 +150,13 @@
 //===============================================================================
 @media (min-width: @screen-md-min) {
 	.page-template-template-home{
-		
+		.hero-container{
+			.hero-slider{
+				.slick-dots{
+					display:none!important;
+				}
+			}
+		}
 	}	
 }
 
