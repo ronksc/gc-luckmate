@@ -48,7 +48,7 @@ var Roots = {
 	  }
 	  
 	  function heroSliderHeight(){
-		  if($(window).width() < 768){ 
+		  if($(window).width() < 992){ 
 		  	 var windowHeight = $(window).height();
 			 var headerHeight = $('.navbar-header').height();
 			 $('.hero-image').css('height', windowHeight-headerHeight);
@@ -70,7 +70,21 @@ var Roots = {
   // Home page
   home: {
     init: function() {
+	  function initSlick(){
+		$('.hero-slider').slick({
+			autoplay: true,
+			autoplaySpeed: 5000,
+			slidesToScroll: 1,
+			slidesToShow: 1,
+			prevArrow: $('.prev'),
+			nextArrow: $('.next')
+		});  
+	  }
+		
       // JavaScript to be fired on the home page
+	  $(document).ready(function(){
+		initSlick();
+	  });
     }
   },
   // About us page, note the change from about-us to about_us.

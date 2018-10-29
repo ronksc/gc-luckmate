@@ -1,9 +1,20 @@
 <div class="container-fluid">
-	<div class="row">
+	<div class="row hero-container">
 		<div class="hero-slider">
 			<div class="hero-slide-item">
-				<div class="hero-image" style="background-image:url(<?=get_stylesheet_directory_uri()?>/assets/img/home/banner_image.png);">
-					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/banner_image.png" class="img-responsive hidden-xs hidden-sm visible-md visible-lg" />
+				<div class="hero-image" style="background-image:url(<?=get_stylesheet_directory_uri()?>/assets/img/home/banner_image.jpg);">
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/banner_image.jpg" class="img-responsive hidden-xs hidden-sm visible-md visible-lg" />
+				</div>
+				<div class="hero-content-wrapper">
+					<div class="hero-content">
+						<h2>Trusted global<br />leading distributor<br />of high quality fishmeal</h2>
+						<p>With over 35 years of trade experience, GC Luckmate Trading Ltd holds a strong presence in the Asian market.<br /><a href="#">Find out more</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="hero-slide-item">
+				<div class="hero-image" style="background-image:url(<?=get_stylesheet_directory_uri()?>/assets/img/home/banner_image.jpg);">
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/banner_image.jpg" class="img-responsive hidden-xs hidden-sm visible-md visible-lg" />
 				</div>
 				<div class="hero-content-wrapper">
 					<div class="hero-content">
@@ -13,6 +24,10 @@
 				</div>
 			</div>
 		</div>
+		<ul class="slider-control">
+			<li class="prev"><a href="javascript:;"></a></li>
+			<li class="next"><a href="javascript:;"></a></li>
+		</ul>
 	</div>
 </div>
 <div class="container">
@@ -27,7 +42,7 @@
 	<div class="row">
 		<div class="image-text-item col-md-4">
 			<div class="image-container">
-				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/image_1.png" class="img-responsive" />
+				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/image_1.jpg" class="img-responsive" />
 			</div>
 			<div class="text-container">
 				<h3>Sustained Quality</h3>
@@ -37,7 +52,7 @@
 		</div>
 		<div class="image-text-item col-md-4">
 			<div class="image-container">
-				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/image_2.png" class="img-responsive" />
+				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/image_2.jpg" class="img-responsive" />
 			</div>
 			<div class="text-container">
 				<h3>Our Affiliations</h3>
@@ -47,7 +62,7 @@
 		</div>
 		<div class="image-text-item col-md-4">
 			<div class="image-container">
-				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/image_3.png" class="img-responsive" />
+				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/image_3.jpg" class="img-responsive" />
 			</div>
 			<div class="text-container">
 				<h3>Purpose Driven</h3>

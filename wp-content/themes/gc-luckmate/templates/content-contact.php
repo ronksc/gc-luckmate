@@ -1,7 +1,9 @@
+
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="page-hero">
-			<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/top-banner-about.png" class="img-responsive">
+			<img src="<?=get_stylesheet_directory_uri()?>/assets/img/contact/hero.jpg" class="img-responsive">
 		</div>
 	</div>
 </div>
@@ -29,7 +31,7 @@
 
 			</div>
 			<div class="col-md-6">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.985318224364!2d114.16301390128376!3d22.27854598526299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040067a8879e63%3A0x8fcc0ebdcc24e069!2z6aaZ5riv57i95ZWG5pyD!5e0!3m2!1szh-TW!2shk!4v1540030167640" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9998642239325!2d114.16352883517484!3d22.27799498311793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040067af29c77d%3A0x8c7a0068687a7b34!2z6YeR6ZCY6YeR6ZCY6YGTOTXomZ_ntbHkuIDkuK3lv4M!5e0!3m2!1szh-TW!2shk!4v1540804279785" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>

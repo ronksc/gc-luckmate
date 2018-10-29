@@ -1,7 +1,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="page-hero">
-			<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/top-banner-about.png" class="img-responsive">
+			<img src="<?=get_stylesheet_directory_uri()?>/assets/img/product/hero.jpg" class="img-responsive">
 		</div>
 	</div>
 </div>
@@ -25,10 +25,10 @@
 		<div class="normal-content">
 			<div class="img-container row">
 				<div class="col-md-6">
-					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/products/img-products-1.png" class="img-responsive">
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/products/img-products-1.jpg" class="img-responsive">
 				</div>
 				<div class="col-md-6">
-					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/products/img-products-2.png" class="img-responsive">
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/products/img-products-2.jpg" class="img-responsive">
 				</div>
 			</div>
 			<h2>Quality Feed</h2>
@@ -40,7 +40,7 @@
 <div class="container">
 	<div class="normal-content">
 		<div class="text-img right-img">
-			<img src="<?=get_stylesheet_directory_uri()?>/assets/img/products/img-products-3.png" class="img-responsive">
+			<img src="<?=get_stylesheet_directory_uri()?>/assets/img/products/img-products-3.jpg" class="img-responsive">
 			<h2>Traceability</h2>
 			<p>Traceability of the fishmeal’s origin through production to the end user goes hand in hand with quality assurance and sustainability.  Our commitment to our clients involves a full understanding of each step of fishmeal production.  We are in direct communication with our suppliers; transparency and honesty is fundamental in our relationships with all stakeholders.  From the acquisition of the raw materials to production, sampling, loading and delivery, we have developed a set of internal controls to guarantee product integrity.</p>
 		</div>

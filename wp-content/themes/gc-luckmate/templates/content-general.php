@@ -1,7 +1,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="page-hero">
-			<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/top-banner-about.png" class="img-responsive">
+			<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/top-banner-about.jpg" class="img-responsive">
 		</div>
 	</div>
 </div>
@@ -26,7 +26,7 @@
 			<p>Renowned Asia-wide, we are committed to socially responsible sourcing and disciplined timely sales execution. Our extensive expertise brings a focused approach to cost management and strict adherence to quality control to deliver value to all our stakeholders. </p>
 			<p>Our head office is located in Hong Kong and we have branch offices in Shanghai and Guangzhou. In each office, we have experienced team members to respond to all client questions and requests. Our logistics team and finance team work diligently and efficiently to ensure that all orders and payments are timely. Our goal is to deliver a seamless experience for all our clients. </p>
 			<div class="img-container">
-				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-1.png" class="img-responsive">
+				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-1.jpg" class="img-responsive">
 			</div>
 		</div>
 	</div>
@@ -62,10 +62,10 @@
 	<div class="normal-content">
 		<div class="row two-column-img">
 			<div class="col-md-6">
-				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-2.png" class="img-responsive">
+				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-2.jpg" class="img-responsive">
 			</div>
 			<div class="col-md-6">
-				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-3.png" class="img-responsive">
+				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-3.jpg" class="img-responsive">
 			</div>
 		</div>
 	</div>

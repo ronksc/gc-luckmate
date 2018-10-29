@@ -5,49 +5,91 @@
 //===============================================================================
 
 .page-template-template-home{
-	.hero-slider{
+	.hero-container{
+		position:relative;
 		margin-bottom:50px;
-		
-		.hero-slide-item{
-			position:relative;
-			color:#fff;
-				
-			.hero-image{
-				background-position:center;
-				background-size:cover;
-			}
+
+		.hero-slider{
 			
-			.hero-content-wrapper{
-				position: absolute;
-				width: 80%;
-				left: 50%;
-				top: 0;
-				height: 100%;
-				transform: translateX(-50%);
+			
+			.hero-slide-item{
+				position:relative;
+				color:#fff;
+					
+				.hero-image{
+					background-position:center;
+					background-size:cover;
+				}
 				
-				.hero-content{
-					position:absolute;
-					top:50%;
-					left:0;
-					transform:translateY(-50%);
-					max-width:600px;
+				.hero-content-wrapper{
+					position: absolute;
+					width: 80%;
+					left: 50%;
+					top: 0;
+					height: 100%;
+					transform: translateX(-50%);
 					
-					h2{
-						margin-top:0;
-						//font-size:52px;
-						font-size:42px;
-						font-weight:600;
+					.hero-content{
+						position:absolute;
+						top:50%;
+						left:0;
+						transform:translateY(-50%);
+						max-width:600px;
+						
+						h2{
+							margin-top:0;
+							//font-size:52px;
+							font-size:42px;
+							font-weight:600;
+						}
+						
+						p{
+							font-size:20px;
+							line-height:38px;
+						}
+						
+						a{
+							color:#fff;
+							text-decoration:underline;
+						}
 					}
-					
-					p{
-						font-size:20px;
-						line-height:38px;
-					}
-					
+				}
+			}
+		}
+		
+		ul.slider-control{
+			padding:0;
+			position:absolute;
+			top:50%;
+			left:0;
+			transform:translateY(-50%);
+			width:100%;
+			li{
+				padding:0;
+				list-style:none;
+				display:inline-block;
+				&.prev{
+					margin-left:20px;
+					float:left;
 					a{
-						color:#fff;
-						text-decoration:underline;
+						background-image:url(../img/common/arrow_left.png);
 					}
+				}
+				
+				&.next{
+					margin-right:20px;
+					float:right;
+					a{
+						background-image:url(../img/common/arrow_right.png);
+					}
+				}
+				
+				a{
+					width:20px;
+					height:35px;
+					background-repeat:no-repeat;
+					background-size:contain;
+					display:inline-block;	
 				}
 			}
 		}
