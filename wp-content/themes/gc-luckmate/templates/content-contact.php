@@ -31,7 +31,7 @@
 
 			</div>
 			<div class="col-md-6">			
-				<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBjNuGJqCYgwXZWda9tLrWPaUxB1-fo91Q&q=95 Queensway, Hong Kong&language=en" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBjNuGJqCYgwXZWda9tLrWPaUxB1-fo91Q&q=95 Queensway, Hong Kong (Unit D, 26/F, United Centre) &language=en" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
