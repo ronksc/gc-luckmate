@@ -14,7 +14,7 @@
 	<div class="container">
 		<div class="normal-content col-lg-10 col-lg-push-1">
 			<div class="img-container">
-				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-1.jpg" class="img-responsive">
+				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/sustainability/img-banner.jpg" class="img-responsive">
 			</div>
 			<h2>COMPANY PROFILE</h2>
 			<p>GC Luckmate Trading Ltd is a subsidiary of Fulcrest Ltd.</p>

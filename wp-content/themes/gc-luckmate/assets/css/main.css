@@ -6787,6 +6787,7 @@ figure.alignnone {
 }
 .grey-background-content {
   position: relative;
+  padding: 20px 0;
 }
 .grey-background-content:before {
   content: "";
@@ -7220,6 +7221,12 @@ footer .copyright-container span:last-child:after {
   .page-template-template-home .hero-container ul.slider-control li.next {
     margin-right: 20px;
   }
+}
+.page-template-template-contact .contact-content-container {
+  line-height: 35px;
+}
+.page-template-template-contact .contact-content-container p {
+  line-height: 35px;
 }
 /* Slider */
 .slick-slider {

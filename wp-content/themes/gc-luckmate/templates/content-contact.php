@@ -10,7 +10,7 @@
 <div class="container">
 	<div class="normal-content col-lg-10 col-lg-push-1">
 		<div class="row two-column-img">
-			<div class="col-md-6">
+			<div class="col-md-5 contact-content-container">
 				<h2>CONTACT</h2>
 				
 				<p><strong>Head Office</strong></p>
@@ -30,8 +30,8 @@
 				<p>E-mail: <a href="mailto:guangzhou@luckmate.cn">guangzhou@luckmate.cn</a></p>
 
 			</div>
-			<div class="col-md-6">			
-				<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBjNuGJqCYgwXZWda9tLrWPaUxB1-fo91Q&q=95 Queensway, Hong Kong (GC LUCKMATE TRADING LTD.) &language=en" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="col-md-7">			
+				<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBjNuGJqCYgwXZWda9tLrWPaUxB1-fo91Q&q=95 Queensway, Hong Kong (GC LUCKMATE TRADING LTD.) &language=en" width="100%" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
