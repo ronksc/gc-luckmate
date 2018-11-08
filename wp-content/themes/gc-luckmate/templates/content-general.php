@@ -49,12 +49,12 @@
 	<div class="normal-content col-lg-10 col-lg-push-1">
 		<h2>MEMBERSHIP</h2>
 		<div class="row logo-item">
-			<div class="col-md-2"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-logo-gafta.png" class="img-responsive"></div>
-			<div class="col-md-10"><p>We are a member of GAFTA (The Grain and Feed Trade Association) as a trading principal in agricultural commodities and general produce.  GAFTA is an international trade association promoting international trade in agricultural commodities, spices and general produce.  GAFTA aims to protect members’ interest through standard contracts and handling arbitration for international dispute resolution.</p></div>
+			<div class="col-md-2 logo-container"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-logo-gafta.png" class="img-responsive"></div>
+			<div class="col-md-10 logo-content"><p>We are a member of GAFTA (The Grain and Feed Trade Association) as a trading principal in agricultural commodities and general produce.  GAFTA is an international trade association promoting international trade in agricultural commodities, spices and general produce.  GAFTA aims to protect members’ interest through standard contracts and handling arbitration for international dispute resolution.</p></div>
 		</div>
 		<div class="row logo-item">
-			<div class="col-md-2"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-logo-iffo.png" class="img-responsive"></div>
-			<div class="col-md-10"><p>We are a member of IFFO The Marine Ingredients Organisation as a premium non-producer; IFFO is an international trade organization for the fishmeal and fish oil industry.  GC Luckmate Trading Ltd regularly attends the annual IFFO meetings to connect with clients and suppliers.  As a member of IFFO, we are in full compliance with its anti-trust and competition regulations.</p></div>
+			<div class="col-md-2 logo-container"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-logo-iffo.png" class="img-responsive"></div>
+			<div class="col-md-10 logo-content"><p>We are a member of IFFO The Marine Ingredients Organisation as a premium non-producer; IFFO is an international trade organization for the fishmeal and fish oil industry.  GC Luckmate Trading Ltd regularly attends the annual IFFO meetings to connect with clients and suppliers.  As a member of IFFO, we are in full compliance with its anti-trust and competition regulations.</p></div>
 		</div>
 	</div>
 </div>
