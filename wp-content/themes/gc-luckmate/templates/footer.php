@@ -1,9 +1,9 @@
 <footer class="content-info" role="contentinfo">
   <div class="container">
     <?php //dynamic_sidebar('sidebar-footer'); ?>
-	<div class="col-md-10 col-lg-8 col-md-push-1 col-lg-push-2">
+	<div class="col-md-10 col-lg-7 col-center">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-5">
 				<h5>CONTACT</h5>
 				<p>Unit D, 26/F, United Centre,</p>
 				<p>95 Queensway, Hong Kong</p>
@@ -13,7 +13,7 @@
 			<div class="col-md-4">
 				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<a href="#" class="logo_iffo"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/logo_iffo.png" class="img-responsive" /></a>
 				<a href="#" class="logo_grafta"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/logo_gafta.png" class="img-responsive" /></a>
 			</div>

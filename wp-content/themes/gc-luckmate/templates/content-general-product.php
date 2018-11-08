@@ -130,6 +130,6 @@
 <div class="container">
 	<div class="normal-content col-lg-10 col-lg-push-1">
 		<h2>ADDITIONAL SERVICES</h2>
-		<p>Our operations and marketing teams in Asia provide one on one consultation to find the best product suitable for your needs. We offer short-term trade financing solutions, <a href="#">contact us</a> to learn more.</p>
+		<p>Our operations and marketing teams in Asia provide one on one consultation to find the best product suitable for your needs. We offer short-term trade financing solutions, <a href="mailto:trading@gcltd.com.hk">contact us</a> to learn more.</p>
 	</div>
 </div>

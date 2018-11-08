@@ -6658,6 +6658,10 @@ a:hover {
   padding: 0!important;
   margin-top: 68px;
 }
+.col-center {
+  float: none;
+  margin: 0 auto;
+}
 .comment-list ol {
   list-style: none;
 }
@@ -6939,6 +6943,10 @@ iframe {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.navbar-default .navbar-nav.mobile-menu > li > a:focus,
+.navbar-default .navbar-nav.mobile-menu > li > a:hover {
+  color: #27ABE2;
+}
 .navbar-default .navbar-nav.mobile-menu > .active > a {
   background-color: transparent;
   color: #27ABE2;
@@ -7059,7 +7067,8 @@ footer {
   background: #3853A4;
   padding: 40px 0;
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 17px;
 }
 footer h5 {
   letter-spacing: 2px;
@@ -7068,9 +7077,16 @@ footer h5 {
 }
 footer a {
   color: #fff;
+  text-decoration: none;
 }
 footer a:hover {
-  color: #fff;
+  color: #27ABE2;
+}
+footer p {
+  line-height: 17px;
+}
+footer .menu {
+  padding-left: 0;
 }
 footer .menu li {
   font-weight: bold;
