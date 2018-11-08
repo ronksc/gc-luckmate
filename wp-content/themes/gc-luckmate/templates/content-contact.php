@@ -8,7 +8,7 @@
 	</div>
 </div>
 <div class="container">
-	<div class="normal-content">
+	<div class="normal-content col-lg-10 col-lg-push-1">
 		<div class="row two-column-img">
 			<div class="col-md-6">
 				<h2>CONTACT</h2>

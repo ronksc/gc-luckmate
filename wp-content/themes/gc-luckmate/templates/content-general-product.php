@@ -6,7 +6,7 @@
 	</div>
 </div>
 <div class="container">
-	<div class="normal-content">
+	<div class="normal-content col-lg-10 col-lg-push-1">
 		<h3 class="intro-text">We offer a wide range of fishmeal with different levels of protein to suit diverse needs, anywhere from a protein content of 58% to 70%.  </h3>
 		<p>Our fishmeal is sourced largely from Peru and Chile, we also source fishmeal from Ecuador, Angola, India, Maurilania, USA, Mexico, Morocco, Oman, Pakistan, South Africa, Thailand and Vietnam. The composition of micronutrients in fishmeal makes it one of the best sources for animal feed. Its high level of digestible protein amino acids, vitamins and minerals are prime feed ingredients for aquaculture, poultry and swine.</p>
 		<div class="quote-text-wrapper">
@@ -22,7 +22,7 @@
 </div>
 <div class="grey-background-content top-image">
 	<div class="container">
-		<div class="normal-content">
+		<div class="normal-content col-lg-10 col-lg-push-1">
 			<div class="img-container row">
 				<div class="col-md-6">
 					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/products/img-products-1.jpg" class="img-responsive">
@@ -38,7 +38,7 @@
 	</div>
 </div>
 <div class="container">
-	<div class="normal-content">
+	<div class="normal-content col-lg-10 col-lg-push-1">
 		<div class="text-img right-img">
 			<img src="<?=get_stylesheet_directory_uri()?>/assets/img/products/img-products-3.jpg" class="img-responsive">
 			<h2>Traceability</h2>
@@ -47,14 +47,14 @@
 	</div>
 </div>
 <div class="container">
-	<div class="normal-content">
+	<div class="normal-content col-lg-10 col-lg-push-1">
 		<h2>Products and Services </h2>
 		<p>We offer a wide range of fishmeal with different levels of protein to suit diverse needs, anywhere from a protein content of 58% to 70%.  Please <a href="#">contact us</a> for further information on finding the right fishmeal for you.</p>
 	</div>
 </div>
 <div class="grey-background-content table">
 	<div class="container">
-		<div class="normal-content">
+		<div class="normal-content col-lg-10 col-lg-push-1">
 			<div class="table-wrapper">
 				<div class="table-container">
 					<div class="table-cell">
@@ -128,7 +128,7 @@
 	</div>
 </div>
 <div class="container">
-	<div class="normal-content">
+	<div class="normal-content col-lg-10 col-lg-push-1">
 		<h2>ADDITIONAL SERVICES</h2>
 		<p>Our operations and marketing teams in Asia provide one on one consultation to find the best product suitable for your needs. We offer short-term trade financing solutions, <a href="#">contact us</a> to learn more.</p>
 	</div>

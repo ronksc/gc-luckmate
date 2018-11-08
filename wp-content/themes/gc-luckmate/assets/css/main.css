@@ -6722,6 +6722,7 @@ figure.alignnone {
   color: #00ADEE;
   padding-bottom: 90px;
   background: url(../img/drop_shadow.png) repeat-x bottom;
+  font-weight: 500;
 }
 .quote-img-text-wrapper {
   position: relative;
@@ -6737,7 +6738,7 @@ figure.alignnone {
   margin-bottom: 50px;
 }
 .normal-content {
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 30px;
 }
 .normal-content h2,
@@ -6745,6 +6746,7 @@ figure.alignnone {
   display: inline-block;
   font-size: 23px;
   color: #3853a4;
+  font-weight: 600;
 }
 .normal-content h2 {
   font-weight: bold;
@@ -6754,7 +6756,7 @@ figure.alignnone {
 }
 .normal-content h3.intro-text {
   margin-bottom: 40px;
-  line-height: 42px;
+  line-height: 35px;
 }
 .normal-content ul {
   padding-left: 20px;
@@ -6832,6 +6834,9 @@ figure.alignnone {
 .grey-background-content .normal-content .table-wrapper .table-container .table-cell ul li {
   list-style: none;
   padding-left: 0;
+}
+iframe {
+  width: 100%;
 }
 @media (min-width: 992px) {
   .grey-background-content {
@@ -6938,7 +6943,7 @@ figure.alignnone {
   color: #27ABE2;
 }
 .navbar-brand {
-  width: 230px;
+  max-width: 230px;
   height: auto;
   padding: 10px 15px;
 }
@@ -7168,14 +7173,14 @@ footer .copyright-container span:last-child:after {
   display: inline-block;
 }
 .page-template-template-home .hero-container ul.slider-control li.prev {
-  margin-left: 20px;
+  margin-left: 10px;
   float: left;
 }
 .page-template-template-home .hero-container ul.slider-control li.prev a {
   background-image: url(../img/common/arrow_left.png);
 }
 .page-template-template-home .hero-container ul.slider-control li.next {
-  margin-right: 20px;
+  margin-right: 10px;
   float: right;
 }
 .page-template-template-home .hero-container ul.slider-control li.next a {
@@ -7196,6 +7201,7 @@ footer .copyright-container span:last-child:after {
   color: #3853A4;
   margin-top: 40px;
   margin-bottom: 22px;
+  font-weight: 500;
 }
 .page-template-template-home .image-text-item .text-container p {
   line-height: 28px;
@@ -7207,6 +7213,12 @@ footer .copyright-container span:last-child:after {
 @media (min-width: 992px) {
   .page-template-template-home .hero-container .hero-slider .slick-dots {
     display: none!important;
+  }
+  .page-template-template-home .hero-container ul.slider-control li.prev {
+    margin-left: 20px;
+  }
+  .page-template-template-home .hero-container ul.slider-control li.next {
+    margin-right: 20px;
   }
 }
 /* Slider */

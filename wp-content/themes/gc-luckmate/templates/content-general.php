@@ -6,7 +6,7 @@
 	</div>
 </div>
 <div class="container">
-	<div class="normal-content">
+	<div class="normal-content col-lg-10 col-lg-push-1">
 		<h3 class="intro-text">GC Luckmate Trading Ltd entered the fishmeal market in 1983; with over 35 years of trade experience, we have built a strong reliable service base for the unique market in Asia. We are the market leader of fishmeal exports to China and aim to maintain our position for generations to come.</h3>
 		<ul>
 			<li>Leading buyer of Peruvian fishmeal</li>
@@ -20,7 +20,7 @@
 </div>
 <div class="grey-background-content bottom-image">
 	<div class="container">
-		<div class="normal-content">
+		<div class="normal-content col-lg-10 col-lg-push-1">
 			<h2>COMPANY PROFILE</h2>
 			<p>GC Luckmate Trading Ltd is a subsidiary of Fulcrest Ltd.</p>
 			<p>Renowned Asia-wide, we are committed to socially responsible sourcing and disciplined timely sales execution. Our extensive expertise brings a focused approach to cost management and strict adherence to quality control to deliver value to all our stakeholders. </p>
@@ -32,7 +32,7 @@
 	</div>
 </div>
 <div class="container">
-	<div class="normal-content">
+	<div class="normal-content col-lg-10 col-lg-push-1">
 		<h2>HISTORY</h2>
 		<p>GC Luckmate Trading Ltd started with the Luckmate Group in 1983 and at that time entered the Peruvian fishmeal market.  Fast forward to the present day, we have built a long term amicable relationship with South America’s largest fishmeal suppliers and because of this close communication and relationship we are able to ensure regular deliveries despite occasional sanctions.</p>
 		<div class="quote-text-wrapper">
@@ -46,7 +46,7 @@
 	</div>
 </div>
 <div class="container">
-	<div class="normal-content">
+	<div class="normal-content col-lg-10 col-lg-push-1">
 		<h2>MEMBERSHIP</h2>
 		<div class="row logo-item">
 			<div class="col-md-2"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-logo-gafta.png" class="img-responsive"></div>
@@ -59,7 +59,7 @@
 	</div>
 </div>
 <div class="container">
-	<div class="normal-content">
+	<div class="normal-content col-lg-10 col-lg-push-1">
 		<div class="row two-column-img">
 			<div class="col-md-6">
 				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-2.jpg" class="img-responsive">

@@ -6,13 +6,13 @@
 	</div>
 </div>
 <div class="container">
-	<div class="normal-content">
+	<div class="normal-content col-lg-10 col-lg-push-1">
 		<h3 class="intro-text">GC Luckmate Trading Ltd entered the fishmeal market in 1983; with over 35 years of trade experience, we have built a strong reliable service base for the unique market in Asia. We are the market leader of fishmeal exports to China and aim to maintain our position for generations to come.</h3>
 	</div>
 </div>
 <div class="grey-background-content top-image">
 	<div class="container">
-		<div class="normal-content">
+		<div class="normal-content col-lg-10 col-lg-push-1">
 			<div class="img-container">
 				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/img-about-1.jpg" class="img-responsive">
 			</div>
@@ -25,7 +25,7 @@
 	</div>
 </div>
 <div class="container">
-	<div class="normal-content">
+	<div class="normal-content col-lg-10 col-lg-push-1">
 		<div class="text-img right-img clearfix">
 			<img src="<?=get_stylesheet_directory_uri()?>/assets/img/products/img-products-3.jpg" class="img-responsive">
 			<h2>Traceability</h2>
@@ -34,7 +34,7 @@
 	</div>
 </div>
 <div class="container">
-	<div class="normal-content">
+	<div class="normal-content col-lg-10 col-lg-push-1">
 		<div class="quote-text-wrapper">
 			<div class="quote-text-content">
 				<div class="row">
