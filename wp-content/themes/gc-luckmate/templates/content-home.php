@@ -31,7 +31,7 @@
 	</div>
 </div>
 <div class="container">
-	<div class="col-lg-10 col-lg-push-1">
+	<div class="col-lg-12 home-quote-wrapper">
 		<div class="quote-text-wrapper">
 			<div class="quote-text-content">
 				<div class="row">
@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		
-		<div class="row">
+		<div class="row home-three-col-img">
 			<div class="image-text-item col-md-4">
 				<div class="image-container">
 					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/image_1.jpg" class="img-responsive" />
