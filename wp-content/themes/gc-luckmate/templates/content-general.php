@@ -1,11 +1,165 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="page-hero">
-			<img src="<?=get_stylesheet_directory_uri()?>/assets/img/about/top-banner-about.jpg" class="img-responsive">
+			
+			
+			<?php
+				$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+				
+			?>
+			
+			<img src="<?=esc_url($featured_img_url)?>" class="img-responsive">
 		</div>
 	</div>
 </div>
-<div class="container">
+<?php
+
+	// check if the flexible content field has rows of data
+	if( have_rows('page_content') ):
+	
+		// loop through the rows of data
+		while ( have_rows('page_content') ) : the_row();
+	
+			echo '<div class="container">';
+			
+				echo '<div class="normal-content col-lg-10 col-lg-push-1">';
+	
+					if( have_rows('content_item') ):
+			
+						// loop through the rows of data
+						while ( have_rows('content_item') ) : the_row();
+								// Intro text
+								if( get_row_layout() == 'intro_text' ):
+									$text = get_sub_field('text');
+									echo '<h3 class="intro-text">'.$text.'</h3>';
+								endif;
+								
+								// HTML content
+								if( get_row_layout() == 'html_content' ):
+									$text = get_sub_field('text');
+									echo $text;							
+								endif;
+								
+								//Title
+								if( get_row_layout() == 'title' ):
+									$text = get_sub_field('text');
+									echo '<h2>'.$text.'</h2>';							
+								endif;
+								
+								//Quote
+								if( get_row_layout() == 'quote' ):
+									$text = get_sub_field('text');
+									echo '<div class="quote-text-wrapper">';
+										echo '<div class="quote-text-content">';
+											echo '<div class="row">';
+												echo '<div class="col-xs-push-1 col-xs-10">'.$text.'</div>';
+											echo '</div>';
+										echo '</div>';
+									echo '</div>';
+								endif;
+								
+								//left_logo_right_text
+								if( get_row_layout() == 'left_logo_right_text' ):
+									$content = get_sub_field('content');
+									
+									if( have_rows('content') ):
+									
+										while ( have_rows('content') ) : the_row();
+										
+											$image = get_sub_field('image');
+											
+											$text = get_sub_field('text');
+											
+											echo '<div class="row logo-item">';
+												echo '<div class="col-md-2 logo-container">';
+													echo '<img src="'.$image.'" class="img-responsive">';
+												echo '</div>';
+												echo '<div class="col-md-10 logo-content">';
+													echo $text;
+												echo '</div>';
+											echo '</div>';
+										
+										endwhile;									
+									
+									endif;
+									
+								endif;
+								
+								//Two Image
+								if( get_row_layout() == 'two_images' ):
+								
+									$images = get_sub_field('images');
+									
+									$size = 'full'; // (thumbnail, medium, large, full or custom size)									
+									if( $images ):
+										echo '<div class="row two-column-img">';
+											foreach( $images as $image ):
+											echo '<div class="col-md-6">';
+												echo '<img src="'.$image['url'].'" class="img-responsive">';
+											echo '</div>';
+											endforeach;
+										echo '</div>';
+									endif; 		
+															
+								endif; 
+								
+								//alternate_image_text
+								if( get_row_layout() == 'alternate_image_text' ):
+									
+									//$content = get_sub_field('content');
+									
+									
+									if( have_rows('content') ):
+										$count=0;
+										while ( have_rows('content') ) : the_row();
+											$image = get_sub_field('image');
+											$title = get_sub_field('title');
+											$text = get_sub_field('text');
+											$count++;
+											echo '<div class="quote-img-text-wrapper">';
+												echo '<div class="quote-img-text-content">';
+													echo '<div class="row">';
+														if($count%2 == 0){
+															echo '<div class="col-md-6">';
+																echo '<h2>'.$title.'</h2>';
+																echo $text;
+															echo '</div>';
+															echo '<div class="col-md-6"><img src="'.$image['url'].'" class="img-responsive" /></div>';
+														}else{
+															echo '<div class="col-md-6"><img src="'.$image['url'].'" class="img-responsive" /></div>';
+															echo '<div class="col-md-6">';
+																echo '<h2>'.$title.'</h2>';
+																echo $text;
+															echo '</div>';
+														}
+													echo '</div>';
+												echo '</div>';
+											echo '</div>';
+										endwhile;
+									
+									endif;
+									
+								endif; 
+					
+						endwhile;
+			
+					endif;
+			
+				echo '</div>';
+				
+			echo '</div>';
+	
+		endwhile;
+	
+	else :
+	
+		// no layouts found
+	
+	endif;
+
+
+?>
+<!--<div class="container">
 	<div class="normal-content col-lg-10 col-lg-push-1">
 		<h3 class="intro-text">GC Luckmate Trading Ltd entered the fishmeal market in 1983; with over 35 years of trade experience, we have built a strong reliable service base for the unique market in Asia. We are the market leader of fishmeal exports to China and aim to maintain our position for generations to come.</h3>
 		<ul>
@@ -17,7 +171,7 @@
 			<li>Economies of scale offer clients the best market price</li>
 		</ul>
 	</div>
-</div>
+</div>-->
 <div class="grey-background-content bottom-image">
 	<div class="container">
 		<div class="normal-content col-lg-10 col-lg-push-1">
@@ -31,7 +185,7 @@
 		</div>
 	</div>
 </div>
-<div class="container">
+<!--<div class="container">
 	<div class="normal-content col-lg-10 col-lg-push-1">
 		<h2>HISTORY</h2>
 		<p>GC Luckmate Trading Ltd started with the Luckmate Group in 1983 and at that time entered the Peruvian fishmeal market.  Fast forward to the present day, we have built a long term amicable relationship with South America’s largest fishmeal suppliers and because of this close communication and relationship we are able to ensure regular deliveries despite occasional sanctions.</p>
@@ -44,8 +198,8 @@
 		</div>
 		<p>Through open communication and experienced marketing teams in major ports in China, we have held the largest market share of Peruvian fishmeal exported into China for the last decade.  </p>
 	</div>
-</div>
-<div class="container">
+</div>-->
+<!--<div class="container">
 	<div class="normal-content col-lg-10 col-lg-push-1">
 		<h2>MEMBERSHIP</h2>
 		<div class="row logo-item">
@@ -57,7 +211,7 @@
 			<div class="col-md-10 logo-content"><p>We are a member of IFFO The Marine Ingredients Organisation as a premium non-producer; IFFO is an international trade organization for the fishmeal and fish oil industry.  GC Luckmate Trading Ltd regularly attends the annual IFFO meetings to connect with clients and suppliers.  As a member of IFFO, we are in full compliance with its anti-trust and competition regulations.</p></div>
 		</div>
 	</div>
-</div>
+</div>-->
 <div class="container">
 	<div class="normal-content col-lg-10 col-lg-push-1">
 		<div class="row two-column-img">

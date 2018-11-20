@@ -7023,7 +7023,7 @@ iframe {
   }
   .navbar-brand {
     padding: 0;
-    max-width: 284px;
+    max-width: 290px;
     height: auto;
   }
   .navbar-nav {
@@ -7237,6 +7237,9 @@ footer .copyright-container span:last-child:after {
 }
 .page-template-template-home .image-text-item {
   margin-bottom: 30px;
+}
+.page-template-template-home .image-text-item .text-container {
+  font-size: 16px;
 }
 .page-template-template-home .image-text-item .text-container h3 {
   color: #3853A4;
