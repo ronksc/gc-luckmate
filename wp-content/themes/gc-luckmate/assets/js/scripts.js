@@ -5332,12 +5332,12 @@ var Roots = {
 			if($(this).hasClass('collapsed')){
 				$(this).removeClass('collapsed');
 				//$('.menu_bg').fadeIn();
-				//$('body').addClass('fixed');
+				$('body').removeClass('fixed');
 				//$('.mobile-menu-wrapper').css('height', window_height-header_height);
 			}else{
 				$(this).addClass('collapsed');
 				//$('.menu_bg').fadeOut();
-				//$('body').removeClass('fixed');
+				$('body').addClass('fixed');
 				//$('.mobile-menu-wrapper').css('height', 'auto');
 			}
 		});

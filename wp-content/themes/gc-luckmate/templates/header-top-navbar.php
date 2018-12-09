@@ -31,12 +31,16 @@
 						<ul>
 							<?php if ( function_exists('icl_object_id') ) {
 								
-								$lang_class = '';
+								
 								$lang_arr = icl_get_languages('skip_missing=1&orderby=id&order=desc');
 								
 								if(sizeof($lang_arr) > 1){
 									foreach( $lang_arr as $lang ){
-									  echo '<li><a class="'.$lang_class.'" href="'.$lang['url'].'" data-original-href="'.strtok($lang['url'], '?').'">'.$lang['native_name'].'</a></li>';
+										if(ICL_LANGUAGE_CODE == $lang['code']){
+											$lang_class = 'active';
+										}
+									
+										echo '<li><a class="'.$lang_class.'" href="'.$lang['url'].'" data-original-href="'.strtok($lang['url'], '?').'">'.$lang['native_name'].'</a></li>';
 									}
 								}
 								
@@ -90,7 +94,10 @@
 								
 								if(sizeof($lang_arr) > 1){
 									foreach( $lang_arr as $lang ){
-									  echo '<li><a class="'.$lang_class.'" href="'.$lang['url'].'" data-original-href="'.strtok($lang['url'], '?').'">'.$lang['native_name'].'</a></li>';
+										if(ICL_LANGUAGE_CODE == $lang['code']){
+											$lang_class = 'active';
+										}
+										echo '<li><a class="'.$lang_class.'" href="'.$lang['url'].'" data-original-href="'.strtok($lang['url'], '?').'">'.$lang['native_name'].'</a></li>';
 									}
 								}
 								

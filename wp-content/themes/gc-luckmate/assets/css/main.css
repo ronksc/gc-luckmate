@@ -6630,6 +6630,9 @@ body {
   color: #221F1F;
   font-size: 18px;
 }
+body.fixed {
+  position: fixed;
+}
 p {
   line-height: 36px;
   margin-bottom: 15px;
@@ -6665,6 +6668,9 @@ a:hover {
 .col-center {
   float: none;
   margin: 0 auto;
+}
+.nowrap {
+  white-space: nowrap!important;
 }
 @media (min-width: 992px) {
   .main {
@@ -6761,9 +6767,6 @@ figure.alignnone {
 .quote-img-text-wrapper .quote-img-text-content {
   padding-bottom: 105px;
   background: url(../img/drop_shadow.png) repeat-x bottom;
-}
-.quote-img-text-wrapper .quote-img-text-content h2 {
-  margin-top: 15px;
 }
 .page-hero {
   margin-bottom: 50px;
@@ -6881,6 +6884,7 @@ figure.alignnone {
 .grey-background-content .normal-content .table-wrapper .table-container .table-cell ul li {
   list-style: none;
   padding-left: 0;
+  white-space: nowrap;
 }
 iframe {
   width: 100%;
@@ -6897,6 +6901,9 @@ iframe {
   .quote-text-wrapper .quote-text-content p {
     line-height: 40px;
   }
+  .quote-img-text-wrapper .quote-img-text-content h2 {
+    margin-top: 0;
+  }
   .normal-content .text-img {
     margin-top: 50px;
   }
@@ -6905,6 +6912,7 @@ iframe {
     max-width: 40%;
     margin-left: 5%;
     margin-bottom: 30px;
+    margin-top: 80px;
   }
   .normal-content .img-container img,
   .normal-content .two-column-img img {
@@ -6933,6 +6941,10 @@ iframe {
   }
   .grey-background-content .normal-content .table-wrapper .table-container .table-cell {
     display: table-cell;
+    padding-right: 40px;
+  }
+  .grey-background-content .normal-content .table-wrapper .table-container .table-cell:last-child {
+    padding-right: 0;
   }
   .grey-background-content .normal-content .table-wrapper .table-container .table-cell span {
     display: none;
@@ -7105,6 +7117,9 @@ iframe {
 .language-container-mobile ul li ul.mobile_lang li a {
   color: #fff;
 }
+.language-container-mobile ul li ul.mobile_lang li a.active {
+  color: #27ABE2!important;
+}
 @media (min-width: 768px) and (max-width: 992px) {
   .navbar-header {
     float: none;
@@ -7151,7 +7166,8 @@ iframe {
     width: auto;
   }
   .language-container a:hover,
-  .language-container a:focus {
+  .language-container a:focus,
+  .language-container a.active {
     color: #2C499F!important;
   }
   .language-container ul {
@@ -7416,7 +7432,7 @@ footer .copyright-container span br {
 }
 .page-template-template-home .hero-container .hero-slider .hero-slide-item .hero-content-wrapper .hero-content h2 {
   margin-top: 0;
-  font-size: 42px;
+  font-size: 35px;
   font-weight: 600;
 }
 .page-template-template-home .hero-container .hero-slider .hero-slide-item .hero-content-wrapper .hero-content h2 p {

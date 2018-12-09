@@ -109,7 +109,7 @@
 							$title = get_sub_field('title');
 							$text = get_sub_field('text');
 							
-							echo '<div class="text-img right-img">';
+							echo '<div class="text-img right-img clearfix">';
 								echo '<img src="'.$image['url'].'" class="img-responsive">';
 								echo '<h2>'.$title.'</h2>';
 								echo $text;
