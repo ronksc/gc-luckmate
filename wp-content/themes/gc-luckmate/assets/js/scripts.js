@@ -5341,6 +5341,14 @@ var Roots = {
 				//$('.mobile-menu-wrapper').css('height', 'auto');
 			}
 		});
+		
+		$('.mobile_lang_toggle').click(function(){
+			if($('.mobile_lang').hasClass('open')){
+				$('.mobile_lang').removeClass('open');	
+			}else{
+				$('.mobile_lang').addClass('open');
+			}
+		});
 	  }
 	  
 	  function heroSliderHeight(){

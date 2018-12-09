@@ -11,28 +11,27 @@
 
 .quote-text-wrapper{
 	position:relative;
-	padding-top:50px;
-	//padding-bottom:50px;
-	//margin-bottom:55px;
+	padding-top:30px;
 	text-align:center;
 	background:url(../img/drop_shadow.png) repeat-x;
 	
-	
 	.quote-text-content{
-		font-size:24px;
+		font-size:18px;
 		color:#00ADEE;
-		padding-bottom:90px;
+		padding-bottom:70px;
 		background:url(../img/drop_shadow.png) repeat-x bottom;
 		font-weight:500;
-		line-height:40px;
+		line-height:30px;
+		
+		p{
+			line-height:30px;
+			margin-bottom:0;
+		}
 	}
 }
 
 .quote-img-text-wrapper{
 	position:relative;
-	//padding-top:50px;
-	//text-align:center;
-	//background:url(../img/drop_shadow.png) repeat-x;
 	padding-top:15px;
 	
 	&:first-of-type{
@@ -42,12 +41,17 @@
 	&:last-of-type{
 		.quote-img-text-content{
 			background:none!important;
+			padding-bottom:0;
 		}
 	}
 	
 	.quote-img-text-content{
 		padding-bottom:105px;
 		background:url(../img/drop_shadow.png) repeat-x bottom;
+		
+		h2{
+			margin-top:15px;
+		}
 	}
 }
 
@@ -85,6 +89,7 @@
 		li{
 			//padding-left:0;
 			line-height:35px;
+			padding-bottom:15px;
 		}
 	}
 	
@@ -97,26 +102,35 @@
 		&:last-child{
 			margin-bottom:0;
 		}
+		
+		.logo-container{
+			img{
+				max-width:130px;
+				margin-top:10px;
+				margin-bottom:20px;
+			}
+		}
 	}
 	
 	.text-img{
-		margin-top:30px;
-		
-		h2{
-			//&:first-child{
-				margin-top:0!important;
-			//}
-		}
-		
+		margin-top:30px;		
 		&.right-img{
-			
-		
 			img{
-				float: right;
+				/*float: right;
 				max-width: 40%;
-				margin-left: 5%;
+				margin-left: 5%;*/
 				margin-bottom: 30px;
 			}
+			
+			h2{
+				margin-top:15px;
+			}
+		}
+	}
+	
+	.img-container, .two-column-img{
+		img{
+			margin-bottom:20px;
 		}
 	}
 }
@@ -131,17 +145,19 @@
 		position:absolute;
 		left:0;
 		width:100%;
-		height:75%;
+		//height:75%;
+		height:93%;
 		background:#E6E7E8;
 	}
 
 	&.bottom-image{
 		&:before{
 			top:0;
+			height:91%;
 		}
 	
 		.img-container{
-			margin-top:30px;
+			margin-top:20px;
 		}
 	}
 	
@@ -151,12 +167,16 @@
 		}
 	
 		.img-container{
-			margin-bottom:30px;
+			margin-bottom:10px;
 		}
 	}
 	
 	&.table{
 		background:#E6E7E8;
+	
+		h2{
+			margin-bottom:0;
+		}
 	
 		&:before{
 			display:none;
@@ -166,6 +186,7 @@
 	.normal-content{
 		position:relative;
 		z-index:800;
+		margin-bottom:10px;
 		
 		.table-wrapper{
 			//display:table;
@@ -174,6 +195,10 @@
 				//display:table-row;
 				.table-cell{
 					//display:table-cell;
+					span{
+						
+					}
+					
 					h3{
 						margin-top:30px;
 						padding-right:20px;
@@ -217,48 +242,66 @@ iframe{
 //===============================================================================
 //===============================================================================
 @media (min-width: @screen-md-min) {
-	.grey-background-content{
-		/*position:relative;
+	.quote-text-wrapper{
+		padding-top:50px;
 	
-		&:before{
-			content:"";
-			display:block;
-			position:absolute;
-			left:0;
-			width:100%;
-			height:75%;
-			background:#E6E7E8;
+		.quote-text-content{
+			font-size:24px;
+			padding-bottom:90px;
+			line-height:40px;
+			
+			p{
+				line-height:40px;
+			}
+		}
+	}
+
+	.normal-content{
+		.text-img{
+			margin-top:50px;
+		
+			&.right-img{
+				img{
+					float: right;
+					max-width: 40%;
+					margin-left: 5%;
+					margin-bottom: 30px;
+				}
+			}
 		}
 	
+		.img-container, .two-column-img{
+			img{
+				margin-bottom:0;
+			}
+		}
+		
+		.logo-item{
+			.logo-container{
+				img{
+					max-width:100%;
+					margin-bottom:0;
+				}
+			}
+		}
+	}
+
+	.grey-background-content{
+		&:before{
+			height:75%;
+		}
+		
 		&.bottom-image{
 			&:before{
 				top:0;
-			}
-		
-			.img-container{
-				margin-top:30px;
+				height:75%;
 			}
 		}
 		
-		&.top-image{
-			&:before{
-				bottom:0;
-			}
 		
-			.img-container{
-				margin-bottom:30px;
-			}
-		}
-		
-		&.table{
-			background:#E6E7E8;
-		
-			&:before{
-				display:none;
-			}
-		}*/
-		
-		.normal-content{			
+		.normal-content{		
+			margin-bottom:30px;
+			
 			.table-wrapper{
 				display:table;
 				width:100%;
@@ -266,6 +309,9 @@ iframe{
 					display:table-row;
 					.table-cell{
 						display:table-cell;
+						span{
+							display:none;
+						}
 					}
 				}
 			}

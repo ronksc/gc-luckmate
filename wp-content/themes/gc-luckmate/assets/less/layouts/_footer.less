@@ -27,6 +27,7 @@ footer{
 	}
 	
 	.menu{
+		margin-top:40px;
 		padding-left:0;
 		li{
 			font-weight:bold;
@@ -34,37 +35,116 @@ footer{
 			list-style:none;
 			padding-bottom:10px;
 			letter-spacing:2px;
+			text-transform:uppercase;
 		}
 	}
 	
 	.logo_iffo{
-		width:120px;
+		width:90px;
+		//width:120px;
 		display:inline-block;
 		margin-bottom:27px;
 	}
 	
 	.logo_grafta{
+		
 		margin-left:25px;
-		width:88px;
+		width:78px;
 		display:inline-block;
 	}
 	
 	.copyright-container{
-		text-align:center;
-		margin-top:35px;
+		text-align:left;
+		margin-top:25px;
+		padding:0 20px;
+		font-size:12px;
 		span{
 			display:inline-block;
-			&:after{
+			/*&:after{
 				content:"|";
 				margin:0 5px;
+			}*/
+			
+			&:first-child{
+				display:block;
+				margin-bottom:10px;
 			}
 			
-			&:last-child{
+			/*&:first-child, &:last-child{
 				&:after{
 					content:"";
 					display:none;
 				}				
+			}*/
+			
+			br{
+				display:block;
 			}
 		}
+	}
+}
+
+//===============================================================================
+//===============================================================================
+// tablet
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-sm-min) {
+	footer{
+
+	}
+}
+
+//===============================================================================
+//===============================================================================
+// Desktop
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-md-min) {
+	footer{
+		.menu{
+			margin-top:0;
+		}
+	
+		.logo_iffo{
+			width:110px;
+		}
+		
+		.logo_grafta{
+			width:88px;
+		}
+		
+		.copyright-container{
+			text-align:center;
+			margin-top:35px;
+			span{
+				/*&:first-child{
+					display:inline-block;
+					margin-bottom:0;
+				}
+			
+				&:first-child{
+					&:after{
+						content:"|";
+						display:inline-block;
+					}				
+				}*/
+				
+				br{
+					display:none;
+				}
+			}
+		}
+	}	
+}
+
+//===============================================================================
+//===============================================================================
+// Wide desktop
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-lg-min) {
+	footer{
+
 	}
 }

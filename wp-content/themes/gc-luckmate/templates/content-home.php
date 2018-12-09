@@ -1,7 +1,38 @@
 <div class="container-fluid">
 	<div class="row hero-container">
 		<div class="hero-slider">
-			<div class="hero-slide-item">
+			<?php
+			$hero_sliders = get_field('hero_slider');
+			
+			
+			//$hero_sliders = get_field('relationship_field_name');
+
+			if( $hero_sliders ): ?>
+				<?php foreach( $hero_sliders as $hero_slider):
+					//remove_filter('acf_the_content', 'wpautop');
+					$title = get_field('title', $hero_slider);
+					//add_filter('acf_the_content', 'wpautop');
+					
+					$text = get_field('text', $hero_slider);
+					$featured_img_url = get_the_post_thumbnail_url($hero_slider); 
+					$mobile_slide_image = get_field('mobile_slide_image', $hero_slider);
+					
+					echo '<div class="hero-slide-item">';
+						echo '<div class="hero-image" style="background-image:url('.$mobile_slide_image['url'].');">';
+							echo '<img src="'.$featured_img_url.'" class="img-responsive hidden-xs hidden-sm visible-md visible-lg" />';
+						echo '</div>';
+						echo '<div class="hero-content-wrapper">';
+							echo '<div class="hero-content">';
+								echo '<h2>'.$title.'</h2>';
+								echo $text;
+							echo '</div>';
+						echo '</div>';
+					echo '</div>';
+				endforeach; 
+			endif; ?>
+
+		
+			<!--<div class="hero-slide-item">
 				<div class="hero-image" style="background-image:url(<?=get_stylesheet_directory_uri()?>/assets/img/home/SLIDE1.jpg);">
 					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/SLIDE1.jpg" class="img-responsive hidden-xs hidden-sm visible-md visible-lg" />
 				</div>
@@ -55,7 +86,7 @@
 						<p>With over 35 years of trade experience, GC Luckmate Trading Ltd holds a strong presence in the Asian market.<br /><a href="#">Find out more</a></p>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
 		<ul class="slider-control">
 			<li class="prev"><a href="javascript:;"></a></li>

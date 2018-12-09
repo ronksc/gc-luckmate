@@ -1,0 +1,28 @@
+html{
+	&:lang(zh-Hant), &:lang(zh-TW), &:lang(zh-HK){
+		body{
+			font-family: "microsoft jhenghei", '微軟正黑', "microsoft yahei", '微軟雅黑', SimHei, '黑體', 'STHeiti', '華文黑體', sans-serif;
+		}
+	}
+	
+	&:lang(zh-Hans), &:lang(zh-CN){
+		body{
+			font-family: "microsoft jhenghei", '微软正黑', "microsoft yahei", '微软雅黑', SimHei, '黑体', STHeiti, '华文黑体', sans-serif;
+		}
+	}	
+}
+
+//===============================================================================
+//===============================================================================
+// Desktop
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-md-min) {
+	html{
+		&:lang(zh-Hant), &:lang(zh-TW), &:lang(zh-HK),&:lang(zh-Hans), &:lang(zh-CN){
+			.navbar-default .navbar-nav > li > a{
+				font-size:15px;
+			}
+		}	
+	}
+}

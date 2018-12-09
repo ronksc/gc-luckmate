@@ -21,6 +21,7 @@ $roots_includes = array(
   'lib/gallery.php',         // Custom [gallery] modifications
   'lib/scripts.php',         // Scripts and stylesheets
   'lib/extras.php',          // Custom functions
+  'lib/post-types.php'		 // Custom post type
 );
 
 foreach ($roots_includes as $file) {

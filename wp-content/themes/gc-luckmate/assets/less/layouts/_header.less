@@ -4,7 +4,11 @@
 //===============================================================================
 //===============================================================================
 
-.banner { }
+.banner {
+	-webkit-box-shadow: -1px 2px 13px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 2px 13px -4px rgba(0,0,0,0.75);
+	box-shadow: -1px 2px 13px -4px rgba(0,0,0,0.75);
+}
 
 .navbar-header{
 	background:#fff;
@@ -25,15 +29,54 @@
 			background:#fff;
 		}
 		
+		&.collapsed {
+			.icon-bar{
+				width:32px;
+			}
+		
+			.top-bar {
+				transform: rotate(45deg);
+				transform-origin:20% 200%;
+			}
+			.middle-bar {
+				opacity: 0;
+			}
+			.bottom-bar {
+				transform: rotate(-45deg);
+				transform-origin:15% -100%;
+			}
+		}
+		
 		.icon-bar{
 			background:#3754A1;
 			width:32px;
 			height:3px;
+			transition: all 0.2s;
 		}
 		
 		.icon-bar + .icon-bar{
-			margin-top:7px;
+			margin-top:6px;
 		}
+		
+		.top-bar {
+			transform: rotate(0);
+		}
+		.middle-bar {
+			opacity: 1;
+		}
+		.bottom-bar {
+			transform: rotate(0);
+		}
+		
+		
+		
+		/*.icon-bar{
+			background-color:#505759;
+			width:22px;
+			
+		}*/
+		
+		
 	}
 	
 	.navbar-collapse{
@@ -71,6 +114,23 @@
 			background-color:transparent;
 			color:#27ABE2;
 		}
+		
+		.sub-menu{
+			padding: 0;
+			margin-top: -20px;
+		
+			li{
+				list-style:none;
+				
+				text-transform: uppercase;
+				//font-weight: bold;
+				letter-spacing: 2px;
+				font-size: 15px;
+				a{
+					color: #fff;
+				}
+			}
+		}
 	}
 }
 
@@ -82,6 +142,52 @@
 
 .navbar{
 	margin-bottom:0;
+}
+
+.language-container-mobile{
+	//float:right;
+	//font-size:12px;
+    font-size: 15px;
+	margin:20px 0 40px 0;
+	width:100%;
+	text-align:center;
+	padding-top:40px;
+	background:url(../img/drop_shadow_dark.png) no-repeat center top;
+	
+	ul{
+		padding:0;
+		display:inline-block;
+		li{
+			list-style:none;
+			position:relative;
+			text-transform:uppercase;
+			color:#fff;
+			
+			span.mobile_lang_toggle{
+				background:url(../img/common/arrow_down_white.png) no-repeat 0px 9px;
+				background-size:13px auto;
+				padding-left:17px;
+				display:inline-block;
+			}
+			
+			ul.mobile_lang{
+				display:none;
+				
+				&.open{
+					display:block;
+				}
+				
+				
+				li{
+					background:none;
+					padding:0;
+					a{
+						color:#fff;
+					}
+				}
+			}
+		}
+	}
 }
 
 //===============================================================================
@@ -132,6 +238,48 @@
 //===============================================================================
 //===============================================================================
 @media (min-width: @screen-md-min) {
+	.language-container{
+		float:right;
+		font-size:12px;
+		margin-top:20px;
+		width:auto;
+		
+		a{
+			&:hover, &:focus{
+				color:#2C499F!important;
+			}
+		}
+		
+		ul{
+			padding:0;
+			li{
+				list-style:none;
+				position:relative;
+				background:url(../img/common/arrow_down.png) no-repeat 0px 3px;
+				background-size:13px auto;
+				padding-left:17px;
+				text-transform:uppercase;
+				cursor: pointer;
+				
+				&:hover{
+					ul{
+						display:block;
+					}
+				}
+				
+				ul{
+					position:absolute;
+					top:100%;
+					display:none;
+					li{
+						background:none;
+						padding:0;
+					}
+				}
+			}
+		}
+	}
+
 	.navbar-toggle{
 		display:none;
 	}
@@ -152,6 +300,34 @@
 	.navbar-nav{
 		float: right;
 		margin-top: 22px;
+		
+		& > li{
+			&:hover{
+				.sub-menu{
+					display:block;
+				}
+			}
+		}
+		
+		.sub-menu{
+		    position: absolute;
+			top: 100%;
+			//display: block;
+			display: none;
+			background: #fff;
+			padding: 10px 20px;
+			font-size: 13px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			color: #171717!important;
+			font-weight: bold;
+			
+			li{
+				list-style: none;
+				white-space: nowrap;
+				padding-bottom:10px;
+			}
+		}
 	}
 	
 	/*.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
@@ -169,13 +345,13 @@
 		.navbar-nav{
 			& > li{
 				& > a{
-					font-size: 12px;
+					font-size: 13px;
 					letter-spacing: 3px;
 					text-transform: uppercase;
 					color: #171717!important;
 					font-weight: bold;
 					//padding:10px 25px;
-					padding:10px 15px;
+					padding:10px 13px;
 				}
 			}
 		
@@ -219,7 +395,7 @@
 		.navbar-nav{
 			& > li{
 				& > a{
-					padding:10px 25px;
+					padding:10px 23px;
 				}
 			}
 		}

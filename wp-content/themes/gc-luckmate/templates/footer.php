@@ -4,11 +4,13 @@
 	<div class="col-md-10 col-lg-7 col-center">
 		<div class="row">
 			<div class="col-md-5">
-				<h5>CONTACT</h5>
-				<p>Unit D, 26/F, United Centre,</p>
-				<p>95 Queensway, Hong Kong</p>
-				<p>Tel:(852) 2866 8806</p>
-				<p>Email: <a href="mailto:trading@gcltd.com.hk">trading@gcltd.com.hk</a></p>
+				<?php
+					$frontpage_id = get_option( 'page_on_front' );
+					
+					$footer_contact = get_field('footer_contact', $frontpage_id);
+					
+					echo $footer_contact;
+				?>
 			</div>
 			<div class="col-md-4">
 				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
@@ -19,9 +21,7 @@
 			</div>
 		</div>
 		<div class="row copyright-container">
-			<span>&copy; 2018 GC Luckmate Trading Ltd. All rights reserved.</span>
-			<span><a href="#">Privacy Policy</a></span>
-			<span><a href="#">Terms of Use</a></span>
+			<span>&copy; 2018 GC Luckmate Trading Ltd. <br />All rights reserved.</span>
 		</div>
 	</div>
   </div>
