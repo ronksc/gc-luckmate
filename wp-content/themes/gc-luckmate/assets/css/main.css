@@ -6671,6 +6671,7 @@ a:hover {
 }
 .nowrap {
   white-space: nowrap!important;
+  display: inline-block !important;
 }
 @media (min-width: 992px) {
   .main {
@@ -6884,7 +6885,6 @@ figure.alignnone {
 .grey-background-content .normal-content .table-wrapper .table-container .table-cell ul li {
   list-style: none;
   padding-left: 0;
-  white-space: nowrap;
 }
 iframe {
   width: 100%;
@@ -6912,7 +6912,6 @@ iframe {
     max-width: 40%;
     margin-left: 5%;
     margin-bottom: 30px;
-    margin-top: 80px;
   }
   .normal-content .img-container img,
   .normal-content .two-column-img img {
@@ -6948,6 +6947,9 @@ iframe {
   }
   .grey-background-content .normal-content .table-wrapper .table-container .table-cell span {
     display: none;
+  }
+  .grey-background-content .normal-content .table-wrapper .table-container .table-cell ul li {
+    white-space: nowrap;
   }
 }
 .banner {
@@ -7119,6 +7121,10 @@ iframe {
 }
 .language-container-mobile ul li ul.mobile_lang li a.active {
   color: #27ABE2!important;
+}
+.mobile-menu-wrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .navbar-header {

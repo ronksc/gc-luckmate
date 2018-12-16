@@ -27,8 +27,8 @@ var Roots = {
 	  function initNavbarToggle(){
 		$('.navbar-toggle').unbind('click');
 		$('.navbar-toggle').click(function(){
-			var window_height = $('body').height();
-			var header_height = $('.topbar-wrapper').height();
+			var window_height = $(window).height();
+			var header_height = $('.navbar-header').height();
 			
 			//console.log('window_height: '+window_height);
 			//console.log('header_height: '+header_height);
@@ -37,12 +37,12 @@ var Roots = {
 				$(this).removeClass('collapsed');
 				//$('.menu_bg').fadeIn();
 				$('body').removeClass('fixed');
-				//$('.mobile-menu-wrapper').css('height', window_height-header_height);
+				$('.mobile-menu-wrapper').css('height', 'auto');
 			}else{
 				$(this).addClass('collapsed');
 				//$('.menu_bg').fadeOut();
 				$('body').addClass('fixed');
-				//$('.mobile-menu-wrapper').css('height', 'auto');
+				$('.mobile-menu-wrapper').css('height', window_height-header_height);
 			}
 		});
 		

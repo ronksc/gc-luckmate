@@ -60,51 +60,55 @@
 	</div>
   </div>
 	<div class="nav-container visible-xs visible-sm hidden-md hidden-lg">
-		<nav class="collapse navbar-collapse main-menu" role="navigation">
-			<?php
-				//Main menu
-				if (has_nav_menu('primary_navigation')) :
-				  wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav mobile-menu', 'depth' => 0));
-				endif;
-			?>
-			<div class="language-container-mobile">
-				<ul>
-					<li>
-						<?php
-							switch(ICL_LANGUAGE_CODE){
-								case 'en':
-									echo '<span class="mobile_lang_toggle">EN</span>';
-									break;
-								case 'zh-hans':
-									echo '<span class="mobile_lang_toggle">簡</span>';
-									break;
-								case 'zh-hant':
-									echo '<span class="mobile_lang_toggle">繁</span>';
-									break;	
-							}
-						?>
-						<ul class="mobile_lang">
-							<!--<li>繁</li>
-							<li>簡</li>-->
-							
-							<?php if ( function_exists('icl_object_id') ) {
-								
-								$lang_class = '';
-								$lang_arr = icl_get_languages('skip_missing=1&orderby=id&order=desc');
-								
-								if(sizeof($lang_arr) > 1){
-									foreach( $lang_arr as $lang ){
-										if(ICL_LANGUAGE_CODE == $lang['code']){
-											$lang_class = 'active';
-										}
-										echo '<li><a class="'.$lang_class.'" href="'.$lang['url'].'" data-original-href="'.strtok($lang['url'], '?').'">'.$lang['native_name'].'</a></li>';
-									}
+		<nav class="collapse navbar-collapse main-menu-mobile" role="navigation">
+			<div class="mobile-menu-wrapper">
+				<?php
+					//Main menu
+					if (has_nav_menu('primary_navigation')) :
+					  wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav mobile-menu', 'depth' => 0));
+					endif;
+				?>
+				<div class="language-container-mobile">
+					<ul>
+						<li>
+							<?php
+								switch(ICL_LANGUAGE_CODE){
+									case 'en':
+										echo '<span class="mobile_lang_toggle">EN</span>';
+										break;
+									case 'zh-hans':
+										echo '<span class="mobile_lang_toggle">簡</span>';
+										break;
+									case 'zh-hant':
+										echo '<span class="mobile_lang_toggle">繁</span>';
+										break;	
 								}
+							?>
+							<ul class="mobile_lang">
+								<!--<li>繁</li>
+								<li>簡</li>-->
 								
-							}?>
-						</ul>
-					</li>
-				</ul>
+								<?php if ( function_exists('icl_object_id') ) {
+									
+									$lang_class = '';
+									$lang_arr = icl_get_languages('skip_missing=1&orderby=id&order=desc');
+									
+									if(sizeof($lang_arr) > 1){
+										foreach( $lang_arr as $lang ){
+											if(ICL_LANGUAGE_CODE == $lang['code']){
+												$lang_class = 'active';
+											}else{
+												$lang_class = '';
+											}
+											echo '<li><a class="'.$lang_class.'" href="'.$lang['url'].'" data-original-href="'.strtok($lang['url'], '?').'">'.$lang['native_name'].'</a></li>';
+										}
+									}
+									
+								}?>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</div>
