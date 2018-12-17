@@ -6644,7 +6644,8 @@ a {
   color: #221F1F;
   text-decoration: underline;
 }
-a:hover {
+a:hover,
+a:focus {
   color: #221F1F;
 }
 .img-responsive,
