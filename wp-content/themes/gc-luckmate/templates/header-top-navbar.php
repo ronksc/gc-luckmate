@@ -38,6 +38,8 @@
 									foreach( $lang_arr as $lang ){
 										if(ICL_LANGUAGE_CODE == $lang['code']){
 											$lang_class = 'active';
+										}else{
+											$lang_class = '';
 										}
 									
 										echo '<li><a class="'.$lang_class.'" href="'.$lang['url'].'" data-original-href="'.strtok($lang['url'], '?').'">'.$lang['native_name'].'</a></li>';
