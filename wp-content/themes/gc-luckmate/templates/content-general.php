@@ -76,7 +76,7 @@
 										echo '<div class="col-md-2 logo-container">';
 											echo '<a href="'.$image_link.'" target="_blank">';
 												echo '<img src="'.$image['url'].'" class="img-responsive">';
-											echo '</a>'
+											echo '</a>';
 										echo '</div>';
 										echo '<div class="col-md-10 logo-content">';
 											echo $text;
