@@ -69,12 +69,14 @@
 								while ( have_rows('content') ) : the_row();
 								
 									$image = get_sub_field('image');
-									
+									$image_link = get_sub_field('link');
 									$text = get_sub_field('text');
 									
 									echo '<div class="row logo-item">';
 										echo '<div class="col-md-2 logo-container">';
-											echo '<img src="'.$image['url'].'" class="img-responsive">';
+											echo '<a href="'.$image_link.'" target="_blank">';
+												echo '<img src="'.$image['url'].'" class="img-responsive">';
+											echo '</a>'
 										echo '</div>';
 										echo '<div class="col-md-10 logo-content">';
 											echo $text;
