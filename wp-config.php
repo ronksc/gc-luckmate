@@ -1,4 +1,13 @@
 <?php
+
+// BEGIN iThemes Security - Do not modify or remove this line
+// iThemes Security Config Details: 2
+define( 'DISALLOW_FILE_EDIT', true ); // Disable File Editor - Security > Settings > WordPress Tweaks > File Editor
+// END iThemes Security - Do not modify or remove this line
+
+/** Enable W3 Total Cache */
+define('WP_CACHE', true); // Added by W3 Total Cache
+
 /**
  * The base configuration for WordPress
  *
@@ -20,16 +29,40 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'gc-luckmate');
+switch ($_SERVER['SERVER_NAME']) {
 
-/** MySQL database username */
-define('DB_USER', 'root');
+  case "local.gcluckmate.com":
+    define( 'DB_NAME',     'gc-luckmate' );
+    define( 'WP_SITEURL',  'http://local.gcluckmate.com' );
+    define( 'WP_HOME', 'http://local.gcluckmate.com' );
+    define( 'DB_USER',     'root' );
+    define( 'DB_PASSWORD', 'root' );
+    define( 'DB_HOST',     'localhost' );
 
-/** MySQL database password */
-define('DB_PASSWORD', 'root');
+  case "gc.catus.tech":
+    define( 'DB_NAME',     'gc-luckmate' );
+    define( 'WP_SITEURL',  'http://gc.catus.tech' );
+    define( 'WP_HOME', 'http://gc.catus.tech' );
+    define( 'DB_USER',     'root' );
+    define( 'DB_PASSWORD', 'catus' );
+    define( 'DB_HOST',     'localhost' );
 
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
+  case "www.gcluckmate.com":
+    define( 'DB_NAME',     'gcluckmate_com' );
+    define( 'WP_SITEURL',  'http://www.gcluckmate.com' );
+    define( 'WP_HOME', 'http://www.gcluckmate.com' );
+    define( 'DB_USER',     'gcluckmate__adm' );
+    define( 'DB_PASSWORD', '@x4(x8FF' );
+    define( 'DB_HOST',     'mysql6.virtualhosting.hk' ); 
+
+  case "gcluckmatecom.youdomain.hk":
+    define( 'DB_NAME',     'gcluckmate_com' );
+    define( 'WP_SITEURL',  'http://gcluckmatecom.youdomain.hk' );
+    define( 'WP_HOME', 'http://gcluckmatecom.youdomain.hk' );
+    define( 'DB_USER',     'gcluckmate__adm' );
+    define( 'DB_PASSWORD', '@x4(x8FF' );
+    define( 'DB_HOST',     'mysql6.virtualhosting.hk' ); 
+}
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -77,7 +110,10 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+//define('WP_DEBUG', true);
+//define( 'WP_DEBUG_DISPLAY', true );
+
+define( 'WP_AUTO_UPDATE_CORE', false );
 
 define('WP_ENV', 'development');
 
