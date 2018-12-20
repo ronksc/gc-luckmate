@@ -16,8 +16,8 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 			</div>
 			<div class="col-md-3">
-				<a href="#" class="logo_iffo"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/logo_iffo.png" class="img-responsive" /></a>
-				<a href="#" class="logo_grafta"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/logo_gafta.png" class="img-responsive" /></a>
+				<a href="http://www.iffo.net/" class="logo_iffo"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/logo_iffo.png" class="img-responsive" /></a>
+				<a href="https://www.gafta.com/" class="logo_grafta"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/logo_gafta.png" class="img-responsive" /></a>
 			</div>
 		</div>
 		<div class="row copyright-container">
